@@ -13,10 +13,10 @@
 <%
     //为了解决相对路径的问题，可返回站点的根路径
     String path = request.getContextPath();
-//request.getScheme,可以返回当前页面使用的协议-----http 或是 https
-//request.getServerName可以返回当前页面所在的服务器的名字-----localhost
-//request.getServerPort可以返回当前页面所在的服务器使用的端口------8888
-//request.getContextPath可以返回当前页面所在的应用的名字 -----List.jsp
+    //request.getScheme,可以返回当前页面使用的协议-----http 或是 https
+    //request.getServerName可以返回当前页面所在的服务器的名字-----localhost
+    //request.getServerPort可以返回当前页面所在的服务器使用的端口------8888
+    //request.getContextPath可以返回当前页面所在的应用的名字 -----List.jsp
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
 
